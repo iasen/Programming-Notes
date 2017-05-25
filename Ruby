@@ -5,39 +5,39 @@ Everything in Ruby is an object
 
 Terms
 Interpreter	  Executes written code
-Editor	      Write code within
-Console	      Displayed results
+Editor	          Write code within
+Console	          Displayed results
 
 
 Operators
-Addition (sum)	            +	        0 + 4 = 4 
-Subtraction	                - 	      10 - 6 = 4 
-Multiplication (product)	  *	        2 * 2 = 4 
-Division (quotient)	        /	        8 / 2 = 4 
-Exponentiation	            **	      2 ** 2 = 4
-Modulo	                    %	        25 % 7 = 4
-Equal to	                  ==	      4 == 4 = TRUE
+Addition (sum)	              +	              0 + 4 = 4 
+Subtraction	              - 	      10 - 6 = 4 
+Multiplication (product)      *	              2 * 2 = 4 
+Division (quotient)	      /	              8 / 2 = 4 
+Exponentiation	              **	      2 ** 2 = 4
+Modulo	                      %	              25 % 7 = 4
+Equal to	              ==	      4 == 4 = TRUE
 Not equal to	              !=	      5 != 4 = TRUE
-Less than	                  <	        3 < 4 = TRUE
+Less than	              <	              3 < 4 = TRUE
 Less than or equal to	      <=	      4 <= 4 = TRUE
-Greater than	              >	        5 > 4 = TRUE
-Greater than or equal to	  >=	      4 >= 4 = TRUE
+Greater than	              >	              5 > 4 = TRUE
+Greater than or equal to      >=	      4 >= 4 = TRUE
 Add 1	                      +=	      After calculation, assigns new value to variable
-Subtract 1	                -=	      After calculation, assigns new value to variable
-Multiply 1	                *=	      After calculation, assigns new value to variable
-Divide 1	                  /=	      After calculation, assigns new value to variable
-And	                        &&	      Only true when both expressions are true
-Or	                        ||	      When either or both expressions are true
-Not	                        !	        !true is actually false, !false is actually true
-Inclusive Range	            1..10	    Includes 10
-Exclusive Range	            1…10	    Excludes 10
+Subtract 1	              -=	      After calculation, assigns new value to variable
+Multiply 1	              *=	      After calculation, assigns new value to variable
+Divide 1	              /=	      After calculation, assigns new value to variable
+And	                      &&	      Only true when both expressions are true
+Or	                      ||	      When either or both expressions are true
+Not	                      !	              !true is actually false, !false is actually true
+Inclusive Range	              1..10	      Includes 10
+Exclusive Range	              1…10	      Excludes 10
 
 
 Data Types
-Numbers	        Whole numbers and decimals
-Booleans	      True or false (never use ' or ")
-Strings	        Words or phrases (' or ")
-Substrings	    Letters by position: zero, one, two, three, and four in the below examplevariable_name[0..4]
+Numbers	          Whole numbers and decimals
+Booleans	  True or false (never use ' or ")
+Strings	          Words or phrases (' or ")
+Substrings	  Letters by position: zero, one, two, three, and four in the below examplevariable_name[0..4]
 
 
 Variables
@@ -46,80 +46,80 @@ Multiple values	      variable_name = [1, 2, 3, 4, 5]
 
 
 Commands
-#	                                Comment - single line, at beginning of each line
-=begin and =end	                  Comment - multi line, on their own lines
+#	                            Comment - single line, at beginning of each line
+=begin and =end	                    Comment - multi line, on their own lines
 Print	                            Prints to the screen
 Puts	                            "put string" prints to the screen then adds blank line
 Gets	                            Gets input from user, adds newline
-#{variable_name}	                Replaces variable with saved variable content
-variable_name[0..4]	              Substring - extract first 5 characters
-If, end	                          If 1 < 2
-                                    print "I'm getting printed because one is less than two!"
-	                                End
+#{variable_name}	            Replaces variable with saved variable content
+variable_name[0..4]	            Substring - extract first 5 characters
+If, end	                            If 1 < 2
+                                      print "I'm getting printed because one is less than two!"
+	                            End
 Else	                            If 1 > 2
-                                    print " I won't get printed because one is not less than two!"
-                                  else
-                                    print "That means the statement is true!"
-	                                End
+                                      print " I won't get printed because one is not less than two!"
+                                    else
+                                      print "That means the statement is true!"
+	                            End
 Elsif	                            If x < y
-                                    puts "x is less than y!"
-                                  elsif x > y
-                                    puts "x is greater than y!"
-	                                Else
-	                                  puts "x equals y!"
-	                                End
-Unless, else, end	                Unless hungry
-                                    # write some programs
-                                  else
-                                    # have some noms
-                                  End
-While, end	                      Counter = 1
-                                  while counter < 11
-                                    puts counter
-                                    counter = counter + 1
-                                  End
-Until, end	                      Counter = 1
-                                  until counter > 10
-                                    puts counter
-                                    counter += 1
-                                  End
-For, end	                        For num in 1..10
-                                    puts num
-                                  End
-Loop, do, break if, end	          I = 0
-	                                Loop do
+                                      puts "x is less than y!"
+                                    elsif x > y
+                                      puts "x is greater than y!"
+	                            Else
+	                              puts "x equals y!"
+	                            End
+Unless, else, end	            Unless hungry
+                                      # write some programs
+                                    else
+                                      # have some noms
+                                    End
+While, end	                    Counter = 1
+                                    while counter < 11
+                                      puts counter
+                                      counter = counter + 1
+                                    End
+Until, end	                    Counter = 1
+                                    until counter > 10
+                                      puts counter
+                                      counter += 1
+                                    End
+For, end	                    For num in 1..10
+                                      puts num
+                                    End
+Loop, do, break if, end	            I = 0
+	                            Loop do
                                     I += 1
-	                                  print "#{i}"
-	                                  break if I > 5
-	                                End
+	                              print "#{i}"
+	                              break if I > 5
+	                            End
 Next if, end	                    For I in 1..5
-                                    next if I % 2 == 0
-                                    print I
-                                  End
-Variable_name.each, do, end	      My_array = [1, 2, 3, 4, 5]
-                                  My_array.each do |x|
-                                    x += 10
-                                    print "#{x}"
-                                  End
-Integer.times { print "text" }	  10.times { print "Chunky bacon!" }
+                                      next if I % 2 == 0
+                                      print I
+                                    End
+Variable_name.each, do, end	    My_array = [1, 2, 3, 4, 5]
+                                      My_array.each do |x|
+                                      x += 10
+                                      print "#{x}"
+                                    End
+Integer.times { print "text" }	    10.times { print "Chunky bacon!" }
 
 
 Methods
-Stacking methods	                          Variable.method1.method2.method3
-.method!	                                  The ! Applies that method to the variables last known content
-.method?	                                  The ? Evaluates to boolean values true or false
-.	                                          How to summon a method
-.length	                                    Calculate the number of characters within a string
-.reverse	                                  Reverses the order of characters within a string
-.upcase	                                    Convert all characters to upper case
-.downcase	                                  Convert all characters to lower case
+Stacking methods	                        Variable.method1.method2.method3
+.method!	                                The ! Applies that method to the variables last known content
+.method?	                                The ? Evaluates to boolean values true or false
+.	                                        How to summon a method
+.length	                                        Calculate the number of characters within a string
+.reverse	                                Reverses the order of characters within a string
+.upcase	                                        Convert all characters to upper case
+.downcase	                                Convert all characters to lower case
 .capitalize	                                Convert first character to upper case
-.chomp	                                    Removes the newline
-.split	                                    Cuts string wherever it encounters a space
+.chomp	                                        Removes the newline
+.split	                                        Cuts string wherever it encounters a space
 .split(",")	                                Cuts string wherever it encounters a space and adds a comma
-.sub("find this","replace with")	          Substitute, replaces just a single occurrence
-.gsub("find this","replace with")	          Global substitute, replaces all occurrences
+.sub("find this","replace with")	        Substitute, replaces just a single occurrence
+.gsub("find this","replace with")	        Global substitute, replaces all occurrences
 .gsub(/find within a word/,"replace with"	
-.include?	                                  Evaluates to true if matches, otherwise is false
-.each	                                      Applies an expression to each element of an object individually
-.times	                                    Performs a task the specified number of times
+.include?	                                Evaluates to true if matches, otherwise is false
+.each	                                        Applies an expression to each element of an object individually
+.times	                                        Performs a task the specified number of times
